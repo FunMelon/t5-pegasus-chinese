@@ -6,7 +6,7 @@ import torch
 import argparse
 import numpy as np
 from tqdm.auto import tqdm
-from bert4torch.model import *
+from bert4torch.models import *
 from torch.utils.data import DataLoader, Dataset
 from torch._six import container_abcs, string_classes, int_classes
 from transformers import MT5ForConditionalGeneration, BertTokenizer
