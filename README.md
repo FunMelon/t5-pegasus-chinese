@@ -50,7 +50,46 @@ python data_process.py
 | libnvjpeg                  | 12.3.1.117              | 0                  | nvidia  |
 | libstdcxx-ng               | 11.2.0                  | h1234567_1         |          |
 | libuv                      | 1.48.0                  | h5eee18b_0         |          |
-| mkl                        
+| mkl                        | 2021.4.0                | h06a4308_640       |          |
+| mkl-service                | 2.4.0                   | py38h7f8727e_0     |          |
+| mkl_fft                    | 1.3.1                   | py38hd3c417c_0     |          |
+| mkl_random                 | 1.2.2                   | py38h51133e4_0     |          |
+| ncurses                    | 6.4                     | h6a678d5_0         |          |
+| ninja                      | 1.12.1                  | h06a4308_0         |          |
+| ninja-base                 | 1.12.1                  | hdb19cb5_0         |          |
+| numpy                      | 1.24.4                  | pypi_0             | pypi     |
+| numpy-base                 | 1.24.3                  | py38h31eccc5_0     |          |
+| openssl                    | 1.1.1w                  | h7f8727e_0         |          |
+| packaging                  | 24.2                    | pypi_0             | pypi     |
+| pandas                     | 2.0.3                   | pypi_0             | pypi     |
+| pip                        | 24.2                    | py38h06a4308_0     |          |
+| python                     | 3.8.0                   | h0371630_2         |          |
+| python-dateutil            | 2.9.0.post0             | pypi_0             | pypi     |
+| pytorch                    | 1.8.0                   | py3.8_cuda11.1_cudnn8.0.5_0 | pytorch |
+| pytorch-cuda               | 12.4                    | hc786d27_7         | pytorch |
+| pytz                       | 2024.2                  | pypi_0             | pypi     |
+| pyyaml                     | 6.0.2                   | pypi_0             | pypi     |
+| readline                   | 7.0                     | h7b6447c_5         |          |
+| regex                      | 2024.11.6               | pypi_0             | pypi     |
+| requests                   | 2.32.3                  | pypi_0             | pypi     |
+| rouge                      | 1.0.1                   | pypi_0             | pypi     |
+| sacremoses                 | 0.1.1                   | pypi_0             | pypi     |
+| setuptools                 | 75.1.0                  | py38h06a4308_0     |          |
+| six                        | 1.16.0                  | pyhd3eb1b0_1       |          |
+| sqlite                     | 3.33.0                  | h62c20be_0         |          |
+| tk                         | 8.6.14                  | h39e8969_0         |          |
+| tokenizers                 | 0.10.3                  | pypi_0             | pypi     |
+| torch4keras                | 0.1.5                   | pypi_0             | pypi     |
+| tqdm                       | 4.67.1                  | pypi_0             | pypi     |
+| transformers               | 4.15.0                  | pypi_0             | pypi     |
+| typing-extensions          | 4.12.2                  | pypi_0             | pypi     |
+| typing_extensions          | 4.11.0                  | py38h06a4308_0     |          |
+| tzdata                     | 2024.2                  | pypi_0             | pypi     |
+| urllib3                    | 2.2.3                   | pypi_0             | pypi     |
+| wheel                      | 0.44.0                  | py38h06a4308_0     |          |
+| xz                         | 5.4.6                   | h5eee18b_1         |          |
+| zlib                       | 1.2.13                  | h5eee18b_1         |          |
+                      
 ---
 基于GOOGLE T5中文生成式模型的摘要生成/指代消解，支持batch批量生成，多进程
 
