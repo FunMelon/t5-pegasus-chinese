@@ -242,10 +242,10 @@ def generate_multiprocess(feature):
 
 def init_argument():
     parser = argparse.ArgumentParser(description='t5-pegasus-chinese')
-    parser.add_argument('--test_data', default='./data/predict.tsv')
-    parser.add_argument('--result_file', default='./data/predict_result.tsv')
+    parser.add_argument('--test_data', default='./data/test.tsv')
+    parser.add_argument('--result_file', default='./data/test_result.tsv')
     parser.add_argument('--pretrain_model', default='./t5_pegasus_pretrain')    
-    parser.add_argument('--model', default='./saved_model/summary_model')
+    parser.add_argument('--model', default='./new_model/summary_model')
 
     parser.add_argument('--batch_size', default=16, help='batch size')
     parser.add_argument('--max_len', default=512, help='max length of inputs')

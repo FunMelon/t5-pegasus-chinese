@@ -252,13 +252,13 @@ def train_model(model, adam, train_data, dev_data, tokenizer, device, args):
 
 def init_argument():
     parser = argparse.ArgumentParser(description='t5-pegasus-chinese')
-    parser.add_argument('--train_data', default='./data/train.tsv')
-    parser.add_argument('--dev_data', default='./data/dev.tsv')
+    parser.add_argument('--train_data', default='./data/train2.tsv')
+    parser.add_argument('--dev_data', default='./data/valid.tsv')
     parser.add_argument('--pretrain_model', default='./t5_pegasus_pretrain')
-    parser.add_argument('--model_dir', default='./saved_model')
+    parser.add_argument('--model_dir', default='./new_model')
     
     parser.add_argument('--num_epoch', default=20, help='number of epoch')
-    parser.add_argument('--batch_size', default=16, help='batch size')
+    parser.add_argument('--batch_size', default=8, help='batch size')
     parser.add_argument('--lr', default=2e-4, help='learning rate')
     parser.add_argument('--data_parallel', default=False)
     parser.add_argument('--max_len', default=512, help='max length of inputs')
