@@ -1,4 +1,57 @@
 # t5-pegasus-chinese
+## 关于数据预处理
+训练代码没有经过更改，这边需要将训练集经过转换得到模型可以正确识别的形式
+```bash
+python data_process.py
+```
+测试集可以直接读取，不需要预处理
+## 关于推理过程
+！！！测试集需要把CSV文件的表头（第一行）删掉，不然测试代码会将其误认为一行数据
+## 包的环境
+！！！注意Python要3.8或者3.7，更高版本的无法支持1.8.0的GPU版本的torch
+| Package                   | Version                 | Build              | Channel  |
+|---------------------------|-------------------------|--------------------|----------|
+| _libgcc_mutex              | 0.1                     | main               |          |
+| _openmp_mutex              | 5.1                     | 1_gnu              |          |
+| bert4torch                 | 0.4.0                   | pypi_0             | pypi     |
+| blas                       | 1.0                     | mkl                |          |
+| ca-certificates            | 2024.11.26              | h06a4308_0         |          |
+| certifi                    | 2024.8.30               | pypi_0             | pypi     |
+| charset-normalizer         | 3.4.0                   | pypi_0             | pypi     |
+| click                      | 8.1.7                   | pypi_0             | pypi     |
+| cuda-cudart                | 12.4.127                | 0                  | nvidia  |
+| cuda-cupti                 | 12.4.127                | 0                  | nvidia  |
+| cuda-libraries             | 12.4.1                  | 0                  | nvidia  |
+| cuda-nvrtc                 | 12.4.127                | 0                  | nvidia  |
+| cuda-nvtx                  | 12.4.127                | 0                  | nvidia  |
+| cuda-opencl                | 12.4.127                | 0                  | nvidia  |
+| cuda-runtime               | 12.4.1                  | 0                  | nvidia  |
+| cudatoolkit                | 11.1.74                 | h6bb024c_0         | nvidia  |
+| filelock                   | 3.16.1                  | pypi_0             | pypi     |
+| fsspec                     | 2024.10.0               | pypi_0             | pypi     |
+| huggingface-hub            | 0.26.3                  | pypi_0             | pypi     |
+| idna                       | 3.10                    | pypi_0             | pypi     |
+| intel-openmp               | 2021.4.0                | h06a4308_3561      |          |
+| jieba                      | 0.42.1                  | pypi_0             | pypi     |
+| joblib                     | 1.4.2                   | pypi_0             | pypi     |
+| libcublas                  | 12.4.5.8                | 0                  | nvidia  |
+| libcufft                   | 11.2.1.3                | 0                  | nvidia  |
+| libcufile                  | 1.9.1.3                 | 0                  | nvidia  |
+| libcurand                  | 10.3.5.147              | 0                  | nvidia  |
+| libcusolver                | 11.6.1.9                | 0                  | nvidia  |
+| libcusparse                | 12.3.1.170              | 0                  | nvidia  |
+| libedit                    | 3.1.20230828            | h5eee18b_0         |          |
+| libffi                     | 3.2.1                   | hf484d3e_1007      |          |
+| libgcc-ng                  | 11.2.0                  | h1234567_1         |          |
+| libgomp                    | 11.2.0                  | h1234567_1         |          |
+| libnpp                     | 12.2.5.30               | 0                  | nvidia  |
+| libnvfatbin                | 12.4.127                | 0                  | nvidia  |
+| libnvjitlink               | 12.4.127                | 0                  | nvidia  |
+| libnvjpeg                  | 12.3.1.117              | 0                  | nvidia  |
+| libstdcxx-ng               | 11.2.0                  | h1234567_1         |          |
+| libuv                      | 1.48.0                  | h5eee18b_0         |          |
+| mkl                        
+---
 基于GOOGLE T5中文生成式模型的摘要生成/指代消解，支持batch批量生成，多进程
 
 **如果你想了解自己是否需要本Git，请看如下几点介绍（重点）：**
